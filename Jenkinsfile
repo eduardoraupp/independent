@@ -1,5 +1,5 @@
-def server = Artifactory.server artifactory
-def rtMaven = Artifactory.newMavenBuild()
+def server
+def rtMaven
 def buildInfo
 pipeline {
 	agent any
@@ -7,6 +7,8 @@ pipeline {
 		stage("Artifactory") {
 			steps {
 				script {
+					Artifactory.server artifactory
+					rtMaven = Artifactory.newMavenBuild()
 					rtMaven.tool = 'M3'
 					rtMaven.deployer releaseRepo: 'libs-release-local', snapshotRepo: 'libs-snapshot-local', server: server
 					rtMaven.resolver releaseRepo: 'libs-release', snapshotRepo: 'libs-snapshot', server: server
