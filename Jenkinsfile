@@ -1,8 +1,8 @@
+def server = Artifactory.server artifactory
+def rtMaven = Artifactory.newMavenBuild()
+def buildInfo
 pipeline {
 	agent any
-	def server = Artifactory.server artifactory
-	def rtMaven = Artifactory.newMavenBuild()
-	def buildInfo
 	stages {
 		stage("Artifactory") {
 			steps {
