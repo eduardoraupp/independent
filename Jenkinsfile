@@ -7,7 +7,7 @@ pipeline {
 		stage("Artifactory") {
 			steps {
 				script {
-					Artifactory.server artifactory
+					server  = Artifactory.server 'artifactory'
 					rtMaven = Artifactory.newMavenBuild()
 					rtMaven.tool = 'M3'
 					rtMaven.deployer releaseRepo: 'libs-release-local', snapshotRepo: 'libs-snapshot-local', server: server
