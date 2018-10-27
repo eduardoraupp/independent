@@ -18,8 +18,8 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-<distributionManagement>
-<!--
+<!--<distributionManagement>
+
     <repository>
 	<uniqueVersion>false</uniqueVersion>
         <id>central</id>
@@ -37,6 +37,6 @@
         </releases>
     </repository>
 </repositories>
--->
-</distributionManagement>
+
+</distributionManagement>-->
 </project>
