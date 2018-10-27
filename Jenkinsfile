@@ -23,7 +23,7 @@ pipeline {
 			steps {
 				script {
 					println "HAS " + (params.isRelease != null)
-					if(params.isRelease != && params.isRelease) {
+					if(params.isRelease != null && params.isRelease) {
 					//rtMaven.run pom: 'pom.xml', goals: 'clean'
 					rtMaven.run pom: 'pom.xml', goals: '-B release:prepare release:perform'
 					//rtMaven.run pom: 'pom.xml', goals: 'clean install', buildInfo: buildInfo	
