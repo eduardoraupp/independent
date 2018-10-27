@@ -18,7 +18,7 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-<!--<distributionManagement>
+<distributionManagement>
 
     <repository>
 	<uniqueVersion>false</uniqueVersion>
@@ -28,15 +28,15 @@
 	<layout>default</layout>
     </repository>
 
-<repositories>
+<snapshotRepository>
 	 <repository>
-        <id>central</id>
+        <id>snapshot</id>
         <url>http://localhost:8081/artifactory/libs-snapshot-local</url>
         <releases>
             <enabled>false</enabled>
         </releases>
-    </repository>
+    </snapshotRepository>
 </repositories>
 
-</distributionManagement>-->
+</distributionManagement>
 </project>
