@@ -19,6 +19,7 @@
 		</dependency>
 	</dependencies>
 <distributionManagement>
+<repositories>
     <repository>
 	<uniqueVersion>false</uniqueVersion>
         <id>central</id>
@@ -33,5 +34,6 @@
             <enabled>false</enabled>
         </releases>
     </repository>
+</repositories>
 </distributionManagement>
 </project>
