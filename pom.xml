@@ -2,13 +2,14 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.jenkins</groupId>
 	<artifactId>independent</artifactId>
-	<version>0.0.3</version>
+	<version>0.0.3-SNAPSHOT</version>
 	<scm>
 		<url>https://github.com/eduardoraupp/independent.git</url>
 		<connection>scm:git:git@github.com:eduardoraupp/independent.git</connection>
 		<developerConnection>scm:git:git@github.com:eduardoraupp/independent.git</developerConnection>
-		<!--<tag>independent-0.0.2</tag>-->
-	</scm>
+		<!--<tag>independent-0.0.2</tag>
+	  <tag>HEAD</tag>-->
+  </scm>
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
