@@ -36,7 +36,7 @@
             <enabled>false</enabled>
         </releases>
     </snapshotRepository>
-</repositories>
+
 
 </distributionManagement>
 </project>
