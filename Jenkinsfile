@@ -22,7 +22,7 @@ pipeline {
 		stage("Build") {
 			steps {
 				script {
-					if(param != null && param.isRelease) {
+					if(binding.hasVariable('param') && param.isRelease) {
 					//rtMaven.run pom: 'pom.xml', goals: 'clean'
 					rtMaven.run pom: 'pom.xml', goals: '-B release:prepare release:perform'
 					//rtMaven.run pom: 'pom.xml', goals: 'clean install', buildInfo: buildInfo	
