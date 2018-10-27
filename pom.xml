@@ -19,11 +19,11 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-	<distributionManagement>
+<distributionManagement>
     <repository>
-        <id>release</id>
+        <id>central</id>
         <name>raupp-releases</name>
-        <url>http://localhost:8081/artifactory/libs-release-local</url>
+        <url>http://localhost:8081/artifactory/libs-release</url>
     </repository>
 </distributionManagement>
 </project>
