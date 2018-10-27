@@ -28,7 +28,7 @@ pipeline {
 					rtMaven.run pom: 'pom.xml', goals: '-B release:prepare release:perform'
 					//rtMaven.run pom: 'pom.xml', goals: 'clean install', buildInfo: buildInfo	
 					} else {
-						rtMaven.run pom: 'pom.xml', goals: 'clean install', , buildInfo: buildInfo
+						rtMaven.run pom: 'pom.xml', goals: 'clean install', buildInfo: buildInfo
 					}
 				}		
 			}
