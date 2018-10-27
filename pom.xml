@@ -29,7 +29,6 @@
     </repository>
 
 <snapshotRepository>
-	 <repository>
         <id>snapshot</id>
         <url>http://localhost:8081/artifactory/libs-snapshot-local</url>
         <releases>
