@@ -22,7 +22,7 @@ pipeline {
 		stage("Build") {
 			steps {
 				script {
-					rtMaven.run pom: 'pom.xml' goals: 'clean'
+					rtMaven.run pom: 'pom.xml', goals: 'clean'
 					rtMaven.run pom: 'pom.xml', goals: '-B release:prepare release:perform'
 					//rtMaven.run pom: 'pom.xml', goals: 'clean install', buildInfo: buildInfo	
 				}		
