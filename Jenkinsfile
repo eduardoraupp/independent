@@ -26,7 +26,7 @@ pipeline {
 					if(params.isRelease != null && params.isRelease) {
 					//rtMaven.run pom: 'pom.xml', goals: 'clean'
 					//rtMaven.run pom: 'pom.xml', goals: "scm:checkin -Dmessage=\"commiting the pom with the release version\" -DpushChanges=false"
-					rtMaven.run pom: 'pom.xml', goals: '-B release:clean release:prepare release:perform -X -DreleaseVersion=0.0.4-SNAPSHOT -DdevelopmentVersion=0.0.5-SNAPSHOT'
+					rtMaven.run pom: 'pom.xml', goals: '-B release:clean release:prepare release:perform -X -DreleaseVersion=0.0.5-SNAPSHOT -DdevelopmentVersion=0.0.6-SNAPSHOT'
 					//rtMaven.run pom: 'pom.xml', goals: 'clean install', buildInfo: buildInfo	
 					} else {
 						rtMaven.run pom: 'pom.xml', goals: 'clean install -X', buildInfo: buildInfo
