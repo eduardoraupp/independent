@@ -23,7 +23,7 @@ pipeline {
 			steps {
 				script {
 					println "HAS " + (params.isRelease != null)
-					if(params.isRelease != null && params.isRelease) {
+					if(params.isParentRelease != null && params.isParentRelease) {
 					//rtMaven.run pom: 'pom.xml', goals: 'clean'
 					//rtMaven.run pom: 'pom.xml', goals: "scm:checkin -Dmessage=\"commiting the pom with the release version\" -DpushChanges=false"
 					//release: -DreleaseVersion=0.0.5-SNAPSHOT -DdevelopmentVersion=0.0.6-SNAPSHOT					
