@@ -40,7 +40,7 @@ pipeline {
 		stage('Publish build info') {
 			steps {
 				script {
-					server.publishBuildInfo buildInfo
+					//server.publishBuildInfo buildInfo
 				}
 			}
 		}
