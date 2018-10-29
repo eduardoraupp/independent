@@ -37,12 +37,12 @@ pipeline {
 				}		
 			}
 		}
-		stage('Publish build info') {
-			steps {
-				script {
+		//stage('Publish build info') {
+		//	steps {
+		//		script {
 					//server.publishBuildInfo buildInfo
-				}
-			}
-		}
+		//		}
+		//	}
+		//}
 	}
 }
